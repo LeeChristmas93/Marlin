@@ -1707,7 +1707,7 @@
 
 // The size of the printable area
 #define X_BED_SIZE 400
-#define Y_BED_SIZE 400
+#define Y_BED_SIZE 440
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1743,13 +1743,13 @@
 #if ENABLED(MIN_SOFTWARE_ENDSTOPS)
   #define MIN_SOFTWARE_ENDSTOP_X
   #define MIN_SOFTWARE_ENDSTOP_Y
-  #define MIN_SOFTWARE_ENDSTOP_Z
-  #define MIN_SOFTWARE_ENDSTOP_I
-  #define MIN_SOFTWARE_ENDSTOP_J
-  #define MIN_SOFTWARE_ENDSTOP_K
-  #define MIN_SOFTWARE_ENDSTOP_U
-  #define MIN_SOFTWARE_ENDSTOP_V
-  #define MIN_SOFTWARE_ENDSTOP_W
+  // #define MIN_SOFTWARE_ENDSTOP_Z
+  // #define MIN_SOFTWARE_ENDSTOP_I
+  // #define MIN_SOFTWARE_ENDSTOP_J
+  // #define MIN_SOFTWARE_ENDSTOP_K
+  // #define MIN_SOFTWARE_ENDSTOP_U
+  // #define MIN_SOFTWARE_ENDSTOP_V
+  // #define MIN_SOFTWARE_ENDSTOP_W
 #endif
 
 // Max software endstops constrain movement within maximum coordinate bounds
