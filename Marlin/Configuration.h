@@ -823,7 +823,7 @@
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
   #define PID_EDIT_MENU         // Add PID editing to the "Advanced Settings" menu. (~700 bytes of flash)
-  //#define PID_AUTOTUNE_MENU     // Add PID auto-tuning to the "Advanced Settings" menu. (~250 bytes of flash)
+  #define PID_AUTOTUNE_MENU     // Add PID auto-tuning to the "Advanced Settings" menu. (~250 bytes of flash)
 #endif
 
 // @section safety
@@ -1495,7 +1495,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 25, 0, 0 }   //using Titan+Aero+close+BLT+(X25,Y0)+and+matching+layer+Fan+(Radial+5015) from thingivserse (thing: 2941191)
+#define NOZZLE_TO_PROBE_OFFSET { 25, 0, -0.23 }   //using Titan+Aero+close+BLT+(X25,Y0)+and+matching+layer+Fan+(Radial+5015) from thingivserse (thing: 2941191)
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1706,8 +1706,8 @@
 // @section geometry
 
 // The size of the printable area
-#define X_BED_SIZE 400
-#define Y_BED_SIZE 440
+#define X_BED_SIZE 405
+#define Y_BED_SIZE 405
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
