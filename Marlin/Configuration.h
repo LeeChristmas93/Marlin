@@ -594,7 +594,7 @@
 #endif
 
 #if TEMP_SENSOR_CHAMBER
-  #define TEMP_CHAMBER_RESIDENCY_TIME 60  // (seconds) Time to wait for chamber to "settle" in M191
+  #define TEMP_CHAMBER_RESIDENCY_TIME 10  // (seconds) Time to wait for chamber to "settle" in M191
   #define TEMP_CHAMBER_WINDOW          1  // (°C) Temperature proximity for the "temperature reached" timer
   #define TEMP_CHAMBER_HYSTERESIS      3  // (°C) Temperature proximity considered "close enough" to the target
 #endif
