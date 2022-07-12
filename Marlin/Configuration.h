@@ -506,7 +506,7 @@
 
 #if ENABLED(PIDTEMP)
   #define PID_EDIT_MENU         // Add PID editing to the "Advanced Settings" menu. (~700 bytes of PROGMEM)
-  //#define PID_AUTOTUNE_MENU     // Add PID auto-tuning to the "Advanced Settings" menu. (~250 bytes of PROGMEM)
+  #define PID_AUTOTUNE_MENU     // Add PID auto-tuning to the "Advanced Settings" menu. (~250 bytes of PROGMEM)
   //#define PID_PARAMS_PER_HOTEND // Uses separate PID parameters for each extruder (useful for mismatched extruders)
                                   // Set/get with gcode: M301 E[extruder number, 0-2]
 
@@ -1055,7 +1055,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 25, 0, 0 }   //using Titan+Aero+close+BLT+(X25,Y0)+and+matching+layer+Fan+(Radial+5015) from thingivserse (thing: 2941191)
+#define NOZZLE_TO_PROBE_OFFSET { 25, 0, -0.23 }   //using Titan+Aero+close+BLT+(X25,Y0)+and+matching+layer+Fan+(Radial+5015) from thingivserse (thing: 2941191)
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1232,8 +1232,8 @@
 // @section machine
 
 // The size of the printable area
-#define X_BED_SIZE 400
-#define Y_BED_SIZE 440
+#define X_BED_SIZE 405
+#define Y_BED_SIZE 405
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
