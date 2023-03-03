@@ -162,18 +162,18 @@
   #define X_CS_PIN                         P1_10
 #endif
 
-#define Y_STEP_PIN                         P0_19
-#define Y_DIR_PIN                          P0_20
-#define Y_ENABLE_PIN                       P2_08
-#ifndef Y_CS_PIN
-  #define Y_CS_PIN                         P1_09
+#define Z_STEP_PIN                         P0_19
+#define Z_DIR_PIN                          P0_20
+#define Z_ENABLE_PIN                       P2_08
+#ifndef Z_CS_PIN
+  #define Z_CS_PIN                         P1_09
 #endif
 
-#define Z_STEP_PIN                         P0_22
-#define Z_DIR_PIN                          P2_11
-#define Z_ENABLE_PIN                       P0_21
-#ifndef Z_CS_PIN
-  #define Z_CS_PIN                         P1_08
+#define Y_STEP_PIN                         P0_22
+#define Y_DIR_PIN                          P2_11
+#define Y_ENABLE_PIN                       P0_21
+#ifndef Y_CS_PIN
+  #define Y_CS_PIN                         P1_08
 #endif
 
 #define E0_STEP_PIN                        P2_13
@@ -230,11 +230,11 @@
   #define X_SERIAL_TX_PIN                  P1_10
   #define X_SERIAL_RX_PIN        X_SERIAL_TX_PIN
 
-  #define Y_SERIAL_TX_PIN                  P1_09
-  #define Y_SERIAL_RX_PIN        Y_SERIAL_TX_PIN
+  #define Y_SERIAL_TX_PIN                  P1_08
+  #define Y_SERIAL_RX_PIN                  P1_08
 
-  #define Z_SERIAL_TX_PIN                  P1_08
-  #define Z_SERIAL_RX_PIN        Z_SERIAL_TX_PIN
+  #define Z_SERIAL_TX_PIN                  P1_09
+  #define Z_SERIAL_RX_PIN                  P1_09
 
   #define E0_SERIAL_TX_PIN                 P1_04
   #define E0_SERIAL_RX_PIN      E0_SERIAL_TX_PIN
